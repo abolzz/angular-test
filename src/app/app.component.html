@@ -1,0 +1,26 @@
+<main>   
+    <section class="container">
+      <div class="py-5 text-center">
+        <h2>Hello There!</h2>
+        <p class="lead">This is a task demonstrating my knowledge developing applications with Angular.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <form>
+        <div class="mb-3">
+          <label for="input">Input:</label>
+          <input (keyup)="onKey($event)" type="text" class="form-control" [ngClass]="{'is-invalid': !isNumber}" id="input" />
+          <small class="invalid-feedback">Error: invalid value provided.</small>
+        </div>
+        <div class="mb-3">
+          <label for="output">Output:</label>
+          <input value="{{ output }}" type="text" class="form-control" id="output" disabled />
+        </div>
+      </form>
+    </section>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      &copy; MyWebsite 2020
+    </footer>
+</main>
